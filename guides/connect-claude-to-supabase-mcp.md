@@ -55,11 +55,15 @@ Supabase is listed as a connector in Claude's directory. If you want the scoped 
 1. In Claude, open **Customize > Connectors**.
 2. Choose the option to add a custom connector.
 3. Give it a clear name, such as "Supabase (read only, reporting project)".
-4. Paste the scoped URL from Step 2 and continue.
-5. Review the sign-in settings Claude detects, then finish adding the connector.
+4. Paste the scoped URL from Step 2 into the **MCP server URL** field and select **Continue**. The dialog has 2 steps.
+5. On the second step, review the sign-in settings Claude detects, then select **Add** to finish adding the connector.
 6. Select **Connect**. A browser window opens so you can sign in to Supabase and approve access. Pick the organization that contains your project.
 
 **On Team and Enterprise plans:** an Owner adds the connector once under **Organization settings > Connectors** with the same name and URL. Members then find it under **Customize > Connectors** and select **Connect** to sign in with their own Supabase account.
+
+![Claude add custom connector dialog with the scoped Supabase server URL]({{ site.baseurl }}/assets/screenshots/supabase-03.png)
+
+![Supabase authorization screen for Claude with the Demo organization and read only permissions]({{ site.baseurl }}/assets/screenshots/supabase-04.png)
 
 Custom connectors work the same way in the Claude desktop app, because Claude reaches the server from Anthropic's cloud rather than from your computer. The hosted Supabase server is already public, so there's nothing to open in your firewall.
 
