@@ -24,6 +24,8 @@ Supabase runs a hosted Model Context Protocol (MCP) server that lets AI assistan
 1. Sign in to the Supabase dashboard and open the project you want to connect.
 2. Open the project's settings and copy the project ref (also called the reference ID).
 
+![Supabase project settings page showing where to find the project ref]({{ site.baseurl }}/assets/screenshots/supabase-01.png)
+
 ## Step 2: Build your scoped server URL
 
 The hosted server lives at `https://mcp.supabase.com/mcp`. You narrow what it can do by adding query parameters to that URL:
@@ -41,6 +43,8 @@ https://mcp.supabase.com/mcp?project_ref=<project-ref>&read_only=true&features=d
 ```
 
 For a read-only reporting or troubleshooting use case, `database,docs` is a good starting set. Add `debugging` if you also want Claude to query logs and read Supabase's security and performance advisors. Leave out `development`, `functions`, and `branching` unless you have a clear reason to include them.
+
+![Supabase docs MCP setup panel with read only on and only the database and docs feature groups]({{ site.baseurl }}/assets/screenshots/supabase-02.png)
 
 ## Step 3a: Connect in Claude (web or desktop app)
 
