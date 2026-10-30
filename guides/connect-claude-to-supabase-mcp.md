@@ -94,6 +94,10 @@ Never paste the token value itself into a chat, a ticket, or a committed file.
 
 Ask Claude something that only works if the connection is live, such as: "What tables are in the database? Use the Supabase MCP tools."
 
+![Claude reading the demo products table through the read-only Supabase connector]({{ site.baseurl }}/assets/screenshots/supabase-07.png)
+
+*Claude reading the demo products table through the read-only connector.*
+
 Then confirm read-only mode is doing its job. Ask Claude to create a throwaway table in a test project. The query should fail because it runs as a read-only Postgres user.
 
 ## What to watch for
