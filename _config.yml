@@ -1,0 +1,10 @@
+title: AI Integration Guides
+description: Practical setup guides for connecting AI assistants to business systems, written for IT leaders.
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+search_enabled: true
+exclude:
+  - drafts/
+  - CLAUDE.md
+  - README.md
