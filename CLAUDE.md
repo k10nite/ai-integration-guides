@@ -20,3 +20,13 @@ Short summary, what you need before you start, numbered steps with screenshots, 
 ## Before every commit
 Run: grep -rniE "@[a-z0-9-]+\.(com|co|net|io)|linkedin|twitter|x\.com/|facebook|phone|perfectted|made beverages|wvcg" --include=*.md --include=*.yml . | grep -v CLAUDE.md
 It should return nothing except placeholder addresses on contoso.onmicrosoft.com.
+
+## Open task: the guides have no images yet
+Both live guides in guides/ are text only. The screenshot spots were removed before publishing. The full list of shots each guide needs is in drafts/ (the lines starting "SCREENSHOT:"), with 8 for Supabase and 9 for Microsoft 365.
+When Neil starts a session, help him:
+1. Take each screenshot from demo or sandbox accounts only (a fresh "Demo" Supabase org and project, a Microsoft 365 sandbox tenant). Never use a client or production project.
+2. Check each image for emails, names, avatars, project refs, tenant or client IDs and keys, and cover anything private with solid boxes (not blur).
+3. Save the images to assets/screenshots/ using the names in drafts/ (supabase-01.png and so on).
+4. Put each image back in the guide at the right step with clear alt text, as ![description]({{ site.baseurl }}/assets/screenshots/name.png).
+5. Fix any button or field names in the text that don't match what the screenshots show, and resolve the "Note to verify" items from drafts/.
+6. Run the pre-commit check, then commit and push. The site rebuilds in about a minute.
