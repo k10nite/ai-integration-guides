@@ -4,7 +4,7 @@ This folder is a public GitHub Pages site holding two technical how-to guides us
 
 ## Guides
 1. guides/connect-claude-to-supabase-mcp.md: connect Claude to Supabase with MCP, read only, scoped to one project.
-2. guides/connect-claude-to-microsoft-365-mailbox.md: connect Claude to a Microsoft 365 mailbox.
+2. drafts/published-connect-claude-to-microsoft-365-mailbox.md: connect Claude to a Microsoft 365 mailbox. Parked in drafts/ for now, so it is not on the live site.
 Starting drafts are in drafts/ (excluded from the site).
 
 ## Each guide follows this shape
@@ -21,8 +21,14 @@ Short summary, what you need before you start, numbered steps with screenshots, 
 Run: grep -rniE "@[a-z0-9-]+\.(com|co|net|io)|linkedin|twitter|x\.com/|facebook|phone|perfectted|made beverages|wvcg" --include=*.md --include=*.yml . | grep -v CLAUDE.md
 It should return nothing except placeholder addresses on contoso.onmicrosoft.com.
 
-## Open task: the guides have no images yet
-Both live guides in guides/ are text only. The screenshot spots were removed before publishing. The full list of shots each guide needs is in drafts/ (the lines starting "SCREENSHOT:"), with 8 for Supabase and 9 for Microsoft 365.
+## Open task: finish the Supabase screenshots
+The Microsoft 365 guide is parked in drafts/published-connect-claude-to-microsoft-365-mailbox.md and is hidden from the live site. The focus is the Supabase guide, which is the only live guide.
+The Supabase guide already shows supabase-01 to supabase-04. The remaining Supabase shots are:
+- supabase-05: the claude mcp add command in a terminal, with the "Added" confirmation line.
+- supabase-06: the Claude Code /mcp panel showing the supabase server as connected.
+- supabase-07: Claude listing the project's tables in response to the test prompt.
+- supabase-08: Claude reporting that a write query was refused in read-only mode.
+The full shot list with placement is in drafts/connect-claude-to-supabase-mcp.md (the lines starting "SCREENSHOT:").
 When Neil starts a session, help him:
 1. Take each screenshot from demo or sandbox accounts only (a fresh "Demo" Supabase org and project, a Microsoft 365 sandbox tenant). Never use a client or production project.
 2. Check each image for emails, names, avatars, project refs, tenant or client IDs and keys, and cover anything private with solid boxes (not blur).
